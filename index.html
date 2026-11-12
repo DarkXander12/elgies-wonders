@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELGIE'S WONDERS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+<header class="entete-principal" id="accueil">
+
+    <div class="decoration decoration-gauche">✦</div>
+    <div class="decoration decoration-droite">✧</div>
+
+    <div class="entete-contenu">
+
+        <div class="badge-entete">
+            RESTAURATION • BOUTIQUE • PLAISIR
+        </div>
+
+        <div class="logo-marque">
+            <span class="etoile">✦</span>
+            <h1>ELGIE'S <span>WONDERS</span></h1>
+            <span class="etoile">✦</span>
+        </div>
+
+        <div class="icone-principale">👑 🛍️</div>
+
+        <p class="slogan">
+            Votre plaisir, notre passion.
+        </p>
+
+        <p class="description-entete">
+            Savourez nos spécialités et découvrez notre boutique.
+        </p>
+
+        <div class="ornement">
+            <span></span> ◆ <span></span>
+        </div>
+
+        <nav class="menu-entete">
+            <a href="#accueil">⌂ Accueil</a>
+            <a href="#menu">🍴 Notre menu</a>
+            <a href="#boutique">🛍 Boutique</a>
+            <a href="#promotions">⭐ Promotions</a>
+            <a href="#contact">☎ Contact</a>
+        </nav>
+
+       <a href="#restaurant" class="bouton-commander">
+            🛒 COMMANDER
+        </a>
+
+    </div>
+</header>
+
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#restaurant">🍴 Restaurant</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#contact">Contact</a>
+        <a href="#panier">Mon panier 🛒</a>
+    </nav>
+
+    <main>
+
+<section id="panier">
+    <h2>Mon panier 🛒</h2>
+<div class="formulaire-client">
+    <h3>Informations du client</h3>
+
+    <label for="nom-client">Nom et prénom :</label>
+    <input type="text" id="nom-client" placeholder="Votre nom complet">
+
+    <label for="telephone-client">Téléphone :</label>
+    <input type="tel" id="telephone-client" placeholder="Ex : 6XXXXXXXX">
+
+    <label for="adresse-client">Adresse de livraison :</label>
+    <input type="text" id="adresse-client" placeholder="Votre quartier et adresse">
+
+    <label for="instructions-client">Instructions particulières :</label>
+    <textarea id="instructions-client" placeholder="Informations supplémentaires..."></textarea>
+    <h3>Mode de paiement</h3>
+
+<label for="mode-paiement">Choisissez votre paiement :</label>
+
+
+<div class="cartes-paiement">
+
+    <button type="button" class="carte-paiement" data-paiement="Orange Money">
+        <span class="logo-paiement orange">OM</span>
+        <strong>Orange Money</strong>
+        <small>Paiement mobile</small>
+    </button>
+
+    <button type="button" class="carte-paiement" data-paiement="MTN Mobile Money">
+        <span class="logo-paiement mtn">MTN</span>
+        <strong>MTN Mobile Money</strong>
+        <small>Paiement mobile</small>
+    </button>
+
+    <button type="button" class="carte-paiement" data-paiement="Paiement à la livraison">
+        <span class="logo-paiement cash">FCFA</span>
+        <strong>Paiement à la livraison</strong>
+        <small>Payez à la réception</small>
+    </button>
+
+</div>
+
+<select id="mode-paiement" hidden>
+    <option value="">Choisir</option>
+    <option value="Orange Money">Orange Money</option>
+    <option value="MTN Mobile Money">MTN Mobile Money</option>
+    <option value="Paiement à la livraison">Paiement à la livraison</option>
+</select>
+
+ <div id="interface-paiement">
+    <h3>Finaliser votre paiement</h3>
+
+    <p>Montant à payer :</p>
+    <h2 id="montant-paiement">0 FCFA</h2>
+
+    <p>Votre mode de paiement sera :</p>
+    <strong id="paiement-selectionne">Aucun mode sélectionné</strong>
+
+    <button type="button" id="confirmer-paiement">
+        Confirmer le paiement
+    </button>
+
+    <p id="statut-paiement">
+        En attente de votre confirmation.
+    </p>
+</div>
+</div>
+    <div id="panier-contenu">
+        <p>Votre panier est actuellement vide.</p>
+    </div>
+
+    <div class="panier-resume">
+        <h3>Total : <span id="panier-total">0 FCFA</span></h3>
+
+        <button id="vider-panier">
+            Vider le panier
+        </button>
+
+        <button id="commander-panier">
+            Commander sur WhatsApp
+        </button>
+    </div>
+</section>
+
+        <section id="accueil">
+            <h2>Bienvenue chez ELGIE'S WONDERS</h2>
+            <p>Découvrez nos délicieux repas et nos produits.</p>
+        </section>
+
+        
+<section id="restaurant">
+    <h2>Notre restaurant</h2>
+    <p>Découvrez nos spécialités.</p>
+
+    <div class="produits">
+        <div class="produit">
+            <img src="images/poulet-pane.jpg" alt="Poulet pané">
+            <h3>Poulet pané</h3>
+            <p>Délicieux poulet à la pannure croustillante</p>
+            <strong>3 500 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/riz-saute.png" alt="Riz sauté">
+            <h3>Riz sauté</h3>
+            <p>Un délicieux plat aux saveurs africaines.</p>
+            <strong>2 500 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/shawarma.png" alt="Shawarma">
+            <h3>Shawarma</h3>
+            <p>Un sandwich généreux et savoureux.</p>
+            <strong>2 000 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/hamburger.png" alt="Hamburger">
+            <h3>Hamburger</h3>
+            <p>Un hamburger gourmand.</p>
+            <strong>2 500 FCFA</strong>
+            <button>Commander</button>
+        </div>
+    </div>
+</section>
+
+<section id="boissons">
+    <h2>Nos boissons</h2>
+    <p>Accompagnez vos repas avec nos boissons préférées.</p>
+
+    <div class="produit">
+    <img src="images/jus-bissap.jpg" alt="Jus de bissap">
+    <h3>Jus de bissap</h3>
+    <p>Un délicieux jus naturel de fleurs d'hibiscus, frais et rafraîchissant.</p>
+    <button>Commander</button>
+</div>
+
+<div class="produit">
+    <img src="images/jus-ananas.jpg" alt="Jus d'ananas">
+    <h3>Jus d'ananas</h3>
+    <p>Un jus naturel d'ananas, doux, fruité et plein de fraîcheur.</p>
+    <button>Commander</button>
+</div>
+
+<div class="produit">
+    <img src="images/jus-baobab.jpg" alt="Jus de baobab">
+    <h3>Jus de baobab</h3>
+    <p>Une boisson traditionnelle au baobab, savoureuse et rafraîchissante.</p>
+    <button>Commander</button>
+</div>
+</section>
+
+       
+<section id="boutique">
+    <h2>Notre boutique en ligne</h2>
+    <p>Découvrez nos produits et faites vos achats.</p>
+
+    <div class="produits">
+
+        <div class="produit">
+            <img src="images/montre.jpg" alt="Montre élégante">
+            <h3>Montre élégante</h3>
+            <p>Une montre pour un style moderne.</p>
+            <strong>15 000 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/ecouteurs.jfif" alt="Écouteurs Bluetooth">
+            <h3>Écouteurs Bluetooth</h3>
+            <p>Profitez de votre musique sans fil.</p>
+            <strong>8 500 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/sac.png" alt="Sac à main">
+            <h3>Sac à main</h3>
+            <p>Un accessoire élégant au quotidien.</p>
+            <strong>12 000 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/parfum.jpg" alt="Parfum">
+            <h3>Parfum</h3>
+            <p>Une fragrance pour vous démarquer.</p>
+            <strong>10 000 FCFA</strong>
+            <button>Commander</button>
+        </div>
+
+    </div>
+</section>
+
+
+      <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Nous sommes à votre disposition.</p>
+
+    
+
+<div class="reseaux-contact">
+
+    <!-- BOUTON WHATSAPP -->
+    <a
+        href="https://wa.me/237694604440"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bouton-contact bouton-whatsapp"
+        aria-label="Nous contacter sur WhatsApp">
+
+        <svg viewBox="0 0 32 32" class="icone-social">
+            <path fill="currentColor" d="M16 .8A15.1 15.1 0 0 0 3.1 23.8L1 31l7.4-1.9A15.2 15.2 0 1 0 16 .8zm0 27.5c-2.4 0-4.7-.7-6.7-2l-.5-.3-4.4 1.2 1.2-4.3-.3-.5a12.4 12.4 0 1 1 10.7 5.9zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.4-.1-.6-.2-.9.2-.3.4-1 1.2-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.2 0-.5 0-.7-.1-.2-.9-2-1.2-2.7-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.8 6 .9.4 1.6.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+        </svg>
+    </a>
+
+    <!-- BOUTON MESSENGER -->
+    <a
+        href="https://m.me/brice.alexander.744794"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bouton-contact bouton-messenger"
+        aria-label="Nous contacter sur Messenger">
+
+        <svg viewBox="0 0 24 24" class="icone-social">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.14 2 11.25c0 2.91 1.46 5.51 3.74 7.2V22l3.42-1.88c.91.25 1.87.38 2.84.38 5.52 0 10-4.14 10-9.25S17.52 2 12 2zm1 12.45-2.55-2.72-4.98 2.72 5.48-5.82 2.61 2.72 4.92-2.72-5.48 5.82z"/>
+        </svg>
+    </a>
+
+</div>
+
+
+</section>
+    </main>
+
+    <footer>
+        <p>© 2026 ELGIE'S WONDERS - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
